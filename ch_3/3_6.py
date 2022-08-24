@@ -1,14 +1,19 @@
-"""
-3-6. More Guests:
-You just found a bigger dinner table,
-so now more space is available.
-Think of three more guests to invite to dinner.
+dinner_list = ['Aristotle', 'Albert Einstein', 'Porfirio Diaz']
+invite_message = ',\n\tI would like to invite you to dinner.\n\tPlease let me know if you\'re available!\nRegards,\nOscar\n'
 
-Start with your program from 3-5.
-Add a print() call to the end of your program informing people that you found a bigger dinner table.
-Use insert() to add one new guest to the beginning of your list.
-Use insert() to add one new guest to the middle of your list.
-Use append() to add one new guest to the end of your list.
-Print a new set of invitation messages,
-one for each person in your list.
-"""
+for guest in dinner_list:
+    print(guest,invite_message)
+    
+print('\n',dinner_list[0],' will not be able to make it!\n')
+dinner_list[0] = 'Alexander the Great'
+
+for guest in dinner_list:
+    print(guest,invite_message)
+    
+print('I found a bigger table for dinner!\n')
+dinner_list.insert(0, 'Paul Walker')
+dinner_list.insert(2, 'Bruce Lee')
+dinner_list.append('Ariel Camacho')
+
+for guest in dinner_list:
+    print(guest,invite_message)
