@@ -1,13 +1,18 @@
-"""
-3-11. Slicing:
-Suppose that word = "image" and phrase = "protein synthesis" write a program that displays the following string slices,
-i, age, im, iae, rote, protein synth, protein image.
-The first line has been completed for you as an example.
-Name the program string_slicing.py.
-word[0]:  i
-"""
+# 3-11. Slicing:
 
 word = "image"
 phrase = "protein synthesis"
-
-print(word[0],', ', slice(word, 2))
+# list to hold all slices
+slices = []
+# create slices
+slices.append(word[0])
+slices.append(word[2:])
+slices.append(word[:2])
+slices.append(word[::-1][::-2])
+slices.append(phrase[1:5])
+slices.append(phrase[:-4])
+slices.append(f'{phrase[:8]}{word}')
+# delimeter string to join slices
+output = ', '
+# print but remove last space and comma
+print(output.join(slices))
