@@ -1,27 +1,22 @@
-"""
-3-8. Seeing the World:
-Think of at least five places in the world you'd like to visit.
-For this program, format the output nicely to indicate what the operation is.
-Also, include a brief comment in your code to indicate the intent of the operation.
-
-Store the locations in a list.
-Make sure the list is not in alphabetical order.
-Print your list in its original order.
-Don't worry about printing the list neatly,
-just print it as a raw Python list.
-Use sorted() to print your list in alphabetical order without modifying the actual list.
-Show that your list is still in its original order by printing it.
-Use sorted() to print your list in reverse alphabetical order without changing the order of the original list.
-Show that your list is still in its original order by printing it again.
-Use reverse to change the order of your list.
-Print the list to show that its order has changed.
-Reestablish your original list.
-Use a combination of remove() and sorted() to remove the alphabetically first occurring value.
-In the case of a list of animals,
-Aardvard is likely to be removed.
-Print the list to show that its order has not changed.
-Use sort() to change your list so it's stored in alphabetical order.
-Print the list to show that its order has been changed.
-Use sort() to change your list so it's stored in reverse alphabetical order.
-Print the list to show that its order has changed.
-"""
+# create and print a raw pyrhon list 
+locations = ['Mexico City', 'Mazatlan', 'Tokyo', 'Helsinki', 'Reykjavic']
+print('The contents of the list: ',locations)
+# print a sorted list without altering the original
+print('The sorted contents of the list: ',sorted(locations))
+print('The original contents of the list: ',locations)
+# print a reverse sorted list without altering the original
+print('The reversed contents of the list: ',sorted(locations, reverse=True))
+print('The original contents of the list: ',locations)
+# reverse the original list
+locations.reverse()
+print('The reversed contents of the list: ',locations)
+# reverse list but first remove the alphabetically first element
+locations.reverse()
+locations.remove(sorted(locations)[0])
+print('The original contents of the list after removing the alphabetically first element: ',locations)
+# sort the original list
+locations.sort()
+print('The sorted contents of the list: ',locations)
+# sort the original list in reverse
+locations.sort(reverse=True)
+print('The reverse sorted contents of the list: ',locations)

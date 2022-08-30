@@ -6,3 +6,8 @@ The first line has been completed for you as an example.
 Name the program string_slicing.py.
 word[0]:  i
 """
+
+word = "image"
+phrase = "protein synthesis"
+
+print(word[0],', ', slice(word, 2))
