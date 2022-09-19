@@ -20,8 +20,4 @@ people = [
 ]
 
 for person in people:
-    first = person["first_name"].title()
-    last = person["last_name"].title()
-    age = person["age"]
-    city = person["city"]
-    print(f'{first} {last} is {age} years old and lives in the city of {city}.')
+    print(person["first_name"].title(),person["last_name"].title(),"is",person["age"],"years old and lives in the city of",person["city"])
