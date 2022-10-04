@@ -2,7 +2,7 @@
 # the file programmatically and run program
 # from util folder
 
-ASSIGNMENT_NUMS = [1,2,3,4,6,7,9,10,11,12,13,14,15]
+ASSIGNMENT_NUMS = [1,2,4,6,10,13,14,15]
 CHAPTER = '9'
 
 
