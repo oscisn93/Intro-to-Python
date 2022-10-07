@@ -15,7 +15,7 @@ class iceCreamStand(Restaurant):
             if  n < 1:
                 print('The',self.ctype,'Sorry the shop is all out of flavors')
                 return
-            flavor_str = switch.get(n)
+            flavor_str = switch.get(n-1)
         else:
             flavor_str = ''
             index = 0
