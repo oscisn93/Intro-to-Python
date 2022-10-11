@@ -1,10 +1,10 @@
-# TODO: make path variable so we can select
-# the file programmatically and run program
-# from util folder
+import os
 
-ASSIGNMENT_NUMS = [1,2,4,6,10,13,14,15]
-CHAPTER = '9'
+ASSIGNMENT_NUMS = [6,7,8,9,10,11,12]
+CHAPTER = '10'
 
+os.mkdir(f'ch_{CHAPTER}')
+os.chdir(f'ch_{CHAPTER}')
 
 for num in ASSIGNMENT_NUMS:
    filename = f'{CHAPTER}_{num}.py'
