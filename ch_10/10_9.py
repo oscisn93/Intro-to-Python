@@ -1,2 +1,11 @@
-# Modify your except block in10-8 to fail silently if either file is missing, 
-# but still print the names for the file that opens.
+def printFile(name):
+    try:
+        with open(name) as file:
+            print(f'\t{name} contents:')
+            contents = file.read()
+            print(contents)
+    except FileNotFoundError:
+        pass
+
+printFile('cats.txt')
+printFile('dog.txt')

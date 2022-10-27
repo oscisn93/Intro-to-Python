@@ -1,7 +1,3 @@
-# Add to the following code such that no unhandled exceptions occur.  
-# Look through https://docs.python.org/3/tutorial/errors.htmlLinks to an external site. f
-# or example code if you are not sure how to do this.
-
 x = [1,2,3,4]
 for i in range(0,3):
     try:
@@ -17,6 +13,11 @@ for i in range(0,3):
         print("Variable not defined")
 
 # # Add handlers for other exceptions
+
+    except ZeroDivisionError:
+        print("Division by zero is not defined")
+    except IndexError:
+        print("Cannot get index 4 of list x.")
 
 # # After exception handling, execution continues
 print("execution continues")
