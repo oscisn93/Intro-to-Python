@@ -1,7 +1,7 @@
 import os
 
-ASSIGNMENT_NUMS = [6,7,8,9,10,11,12]
-CHAPTER = '10'
+ASSIGNMENT_NUMS = [1,2,3]
+CHAPTER = '11'
 
 os.mkdir(f'ch_{CHAPTER}')
 os.chdir(f'ch_{CHAPTER}')
