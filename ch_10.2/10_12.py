@@ -1,7 +1,3 @@
-# If the number is already stored, report the favorite number to the user. 
-# If not, prompt for the user’s favorite number and store it in a file. 
-# Use the file that was created in 10-11 to avoid file open problems. 
-# Run the program twice to see that it works.
 import json
 
 def writeFavNumToJSON():
