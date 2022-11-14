@@ -11,7 +11,7 @@ cubed_values = [i**3 for i in range(1, 501)]
 plt.style.use('dark_background') 
 
 plt.plot(input_values, cubed_values)
-plt.xlabel('numebers')
+plt.xlabel('numbers')
 plt.xlabel('cubed numbers')
 
 gradient = np.linspace(0,2,256)
