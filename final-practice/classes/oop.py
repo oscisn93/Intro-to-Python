@@ -2,20 +2,18 @@ from numpy import mean
 
 
 class Person:
-    def __init__(self, firstname, lastname, id) -> None:
+    def __init__(self, firstname, lastname, person_id) -> None:
         self.first = firstname
         self.last = lastname
-        self.id = id
+        self.person_id = person_id
 
     def toString(self) -> str:
-        return f'Name: {self.last}, {self.first}\nID: {self.id}'
+        return f'Name: {self.last}, {self.first}\nID: {self.person_id}'
 
 
 class Student(Person):
-    def __init__(self, firstname, lastname, id, scores) -> None:
-        self.first = firstname
-        self.last = lastname
-        self.id = id
+    def __init__(self, firstname, lastname, person_id, scores) -> None:
+        Person.__init__(self, firstname, lastname, person_id)
         self.scores = scores
 
     def calculate(self):
