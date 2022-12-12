@@ -1,3 +1,3 @@
 UP_TO = 20
-for i in range(0, UP_TO):
+for i in range(UP_TO):
     print(i+1)

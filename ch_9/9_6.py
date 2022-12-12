@@ -2,7 +2,7 @@ from Restaurant import Restaurant
 
 class iceCreamStand(Restaurant):
     def __init__(self, name, ctype, flavors):
-        super().__init__(name, ctype)
+        Restaurant.__init__(self, name, ctype)
         self.flavors = flavors
     
     def print_flavors(self):
