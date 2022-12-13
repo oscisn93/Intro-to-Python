@@ -9,7 +9,7 @@ except HTTPError:
     print("That url is invalid or no longer has the resource you are requesting.")
 
 try:
-    with open(filename) as book:
+    with open(filename, 'r') as book:
         the_count = book.read().split().count('the')
         print("\nThe word \"the\" is used approximately",the_count,"times.")
     os.remove(filename)
