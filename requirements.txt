@@ -10,7 +10,7 @@ dbus-python==1.2.16
 distro==1.4.0
 entrypoints==0.3
 fonttools==4.38.0
-httplib2==0.14.0
+httplib2==0.19.0
 idna==2.8
 keyring==18.0.1
 kiwisolver==1.4.4
